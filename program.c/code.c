@@ -1,10 +1,14 @@
 #include<stdio.h>
 int main()
 {
-    int marks[5]={50,60,70,90,80};
-    for(int i=0; i<=4;i++)
+    int arr[7];
+    int sum = 0;
+    printf("Enter 7 numbers:\n");
+    for(int i=0; i<7; i++)
     {
-        printf("%d\n",marks[i]);
+        scanf("%d", &arr[i]);
+        sum += arr[i];
     }
+    printf("Sum of the numbers is: %d\n", sum);
     return 0;
 }
